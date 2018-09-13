@@ -11,24 +11,28 @@ string identifier, and `j` is the attempt.
 
 Current assignments:
 
-0. Alimazon
-1. Matrices
-2. Report:
+0. assignment-0: products in alimazon
+1. assignment-1: matrix multiplication
+2. assignment-2: business report
     * Best selling products by gross sales and orders
     * Best customers by gross spending and orders
-3. Aggregations:
+3. assignment-3: dataset and dataframe operations
     * Best selling hours
     * Monthly discount
     * Client/Orders Distribution
+4. assignment-5: partitioning exploring
+5. assignment-6: a full-fledged report for Alimazon
+6. assignment-7: join operations and shared variables
+8. assignment-8: images metadata
 
 ## Procedure
 
 Once an assignment has been completed:
-1. Create the jar.
+1. Create the jar in the root directory of the assignment..
     * `sbt assembly`
 2. Submit the job to dataproc.
-    * `glcoud dataproc jobs submit spark --jar <jar> --cluser <name> --region <region>`
-3. Create the `tar.gz` file. 
+    * `gcloud dataproc jobs submit spark --jar <path/to/jar> --cluster <name> --region <region>`
+3. Create the `tar.gz` file for the root directory of this repo.. 
     * `tar -zcvf assignment-<i>-code-attempt-<j>.tar.gz assignment-<i>/*`
     * Where `i` is the assignment number and `j` is the attempt number.
 4. Upload the tar.gz into google storage.
@@ -74,4 +78,8 @@ Where:
     <bucket-name>  : is the name of the bucket in Google Cloud. 
 ```
 
-## 
+## Authors
+
+This is the original work of [Rodrigo Hernández Mota](https://www.linkedin.com/in/rhdzmota/) for the **Big Data Engineering with Spark** program. 
+
+

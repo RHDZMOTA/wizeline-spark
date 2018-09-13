@@ -67,4 +67,7 @@ jrebel.lic
 # paulp script
 /.lib/
 
-
+*.tar.gz
+de-training-input
+de-training-output-rhdzmota
+*.tar
